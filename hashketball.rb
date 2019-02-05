@@ -154,7 +154,7 @@ end
   colors =[]
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
-      if(data==team_name)#reduce this one and above statement to one single line: if team_data.has_value?(team_name)
+      if(data==team_name)
         colors = team_data[:colors]
       end
     end
