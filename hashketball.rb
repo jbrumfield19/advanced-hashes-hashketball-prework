@@ -227,27 +227,9 @@ end
 end
 
 
- def most_points_scored
-  all_points =[]
-  result = ""
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      if attribute==:players
-        data.each do |player, stat|
-          all_points << data[player][:points]
-          if data[player][:points]==all_points.max
-            result = player
-          end
-        end
-      end
-    end
-  end
-  r
 
 
 
-esult
-end
 
 
 
